@@ -7,10 +7,10 @@ export default () => {
 	return (
 		<Jumbotron bsClass='page-header'>
       <h1><i className="fa fa-newspaper-o" aria-hidden="true"></i>
-				New York Times Article Search</h1>
+				Make a Healthy Grocery List</h1>
       <div className="page-header__badge">
-          <a href="http://developer.nytimes.com/" target="_blank">
-          	<img src="assets/images/poweredby_nytimes_150c.png" alt="Powered By The New York Times"/></a>
+          <a href="#" target="_blank">
+          	<img src="assets/images/smart-grocer.gif" alt="Smart Grocer"/></a>
       </div>
     </Jumbotron>
   )

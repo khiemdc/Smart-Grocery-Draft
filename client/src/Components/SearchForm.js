@@ -43,7 +43,7 @@ export default class SearchForm extends Component {
 
 	handleEndYearChange(e){
 		this.setState({endYear: e.target.value});
-	}
+	} 
 	
 	handleSubmit(e) {
 		e.preventDefault();

@@ -8,10 +8,10 @@ export default () => {
 		<footer className="footer text-center">
 	    <span>Copyright&nbsp;
 	    	<i className="fa fa-copyright" aria-hidden="true"></i>
-	    	{date}&nbsp;Wesley L. Handy
+	    	{date}&nbsp;Team
 	    </span>
 	    <div>
-	    	<a href="https://github.com/wesleylhandy/nyt-react-srch" target="_blank">
+	    	<a href="https://github.com/khiemdc/" target="_blank">
 	    		<i className="fa fa-github" aria-hidden="true"></i>
 	    	</a>
 	    </div>
