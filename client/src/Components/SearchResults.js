@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse } from 'react-bootstrap';
+import '../styles/searchResults.css';
 
 import PanelHeading from './PanelHeading';
 import ResultsListItems from './ResultsListItems';
@@ -26,7 +27,7 @@ export default class SearchResults extends Component {
 
 		return (
 
-			<div className="panel panel-default">
+			<div className="searchResults">
 				<PanelHeading toggle={this.toggleExpand.bind(this)} glyph='list-alt' title='Search Results'/>
         <Collapse in={this.state.open}>
         	<div className="panel-body">

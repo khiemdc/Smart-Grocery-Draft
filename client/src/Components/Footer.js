@@ -8,13 +8,8 @@ export default () => {
 		<footer className="footer text-center">
 	    <span>Copyright&nbsp;
 	    	<i className="fa fa-copyright" aria-hidden="true"></i>
-	    	{date}&nbsp;Team
+	    	{date}&nbsp;project 3
 	    </span>
-	    <div>
-	    	<a href="https://github.com/khiemdc/" target="_blank">
-	    		<i className="fa fa-github" aria-hidden="true"></i>
-	    	</a>
-	    </div>
 		</footer>
 	)
 }

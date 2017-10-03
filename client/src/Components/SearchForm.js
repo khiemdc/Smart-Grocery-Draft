@@ -98,30 +98,7 @@ export default class SearchForm extends Component {
                 </FormControl>
               </FormGroup>
 
-              <FormGroup>
-                <ControlLabel className='pull-left'>Start Year (Optional):</ControlLabel>
-                <FormControl 
-                	type="number" 
-                	min="1851" 
-                	max={this.state.currentYear} 
-                	placeholder="1851"
-                	value={this.state.startYear}
-                	onChange={this.handleStartYearChange.bind(this)}
-                	/>
-              </FormGroup>
-              
-              <FormGroup>
-                <ControlLabel className='pull-left'>End Year (Optional):</ControlLabel>
-                <FormControl 
-                	type="number" 
-                	min="1851" 
-                	max={this.state.currentYear} 
-                	placeholder={this.state.currentYear}
-                	value={this.state.endYear}
-                	onChange={this.handleEndYearChange.bind(this)}
-                />
-              </FormGroup>
-          
+            
               <Button type="submit" className='pull-left'>
               	<Glyphicon glyph='search'>&nbsp;Search</Glyphicon>              	
               </Button>

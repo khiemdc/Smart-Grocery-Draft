@@ -55,6 +55,4 @@ function isGroceryUnique(value, done) {
   })
 }
 
-
-
 module.exports = mongoose.model('Grocery', newSchema);
