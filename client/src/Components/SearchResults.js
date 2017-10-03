@@ -28,7 +28,7 @@ export default class SearchResults extends Component {
 		return (
 
 			<div className="searchResults">
-				<PanelHeading toggle={this.toggleExpand.bind(this)} glyph='list-alt' title='Search Results'/>
+				<PanelHeading toggle={this.toggleExpand.bind(this)} glyph='list-alt' title='Choose Your Groceries'/>
         <Collapse in={this.state.open}>
         	<div className="panel-body">
         		<ResultsListItems groceries={this.state.groceries}/>

@@ -28,7 +28,7 @@ export default class FavoritesList extends Component {
 		return (
 
 			<div className="favoritesList">
-				<PanelHeading toggle={this.toggleExpand.bind(this)} glyph='fire' title='Saved Groceries'/>
+				<PanelHeading toggle={this.toggleExpand.bind(this)} glyph='fire' title='Grocery List'/>
         <Collapse in={this.state.open}>
         	<div className="panel-body">
         		<FavoritesListItems groceries={this.state.groceries}/>

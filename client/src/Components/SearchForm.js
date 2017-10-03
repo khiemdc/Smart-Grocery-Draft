@@ -72,7 +72,7 @@ export default class SearchForm extends Component {
 		return (
 			<div className="panel panel-default">
 
-        <PanelHeading toggle={this.toggleExpand.bind(this)} glyph='search' title='Search Form'/>
+        <PanelHeading toggle={this.toggleExpand.bind(this)} glyph='search' title='Search Your Meal'/>
         
         <Collapse in={this.state.open}>
         	<div className="panel-body">
