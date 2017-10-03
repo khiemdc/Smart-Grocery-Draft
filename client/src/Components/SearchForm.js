@@ -49,11 +49,7 @@ export default class SearchForm extends Component {
 		e.preventDefault();
 		const searchTerms = this.state.searchTerms.trim().replace(' ', "+");
 
-		const startDate = this.state.startYear >= 1851 && this.state.startYear <= this.state.currentYear ? `&begin_date=${this.state.startYear}0101` : '';
-
-		const endDate = this.state.endYear <= this.state.currentYear && this.state.endYear >= 1851 ? `&end_date=${this.state.endYear}1231` : '';
-
-		const queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerms}&fq=source:(The+New+York+Times)&api-key=${process.env.NYT_API || '4bbabbfc37dd4786914ca930e35dd905'}${startDate}${endDate}`;
+		const queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerms}&fq=source:(The+New+York+Times)&api-key=${process.env.NYT_API || '4bbabbfc37dd4786914ca930e35dd905'}`;
 		
     this.props.callFetch(queryURL);
 		
@@ -64,7 +60,7 @@ export default class SearchForm extends Component {
 	}
 
 	reset(e) {
-		this.setState({searchTerms: '', startYear: undefined, endYear: undefined, numRecords: 10});
+		this.setState({searchTerms: '', numRecords: 10});
 	}
 
 	render() {
