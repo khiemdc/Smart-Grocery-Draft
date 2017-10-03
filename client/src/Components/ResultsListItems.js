@@ -85,7 +85,7 @@ export default class ResultsListItems extends Component {
 										<Media.Right>
 
 											<Button bsStyle='primary' onClick={function() {this.toggleSave(grocery, imgSrc, index)}.bind(this)}>
-												{saved}
+												{saved} <i>save></i>
 											</Button>
 	
 										</Media.Right>

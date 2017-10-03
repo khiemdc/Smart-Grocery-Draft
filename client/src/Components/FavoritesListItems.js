@@ -138,7 +138,7 @@ export default class FavoritesListItems extends Component {
 												<div className='button-list--right'>
 
 													<Button bsStyle='primary' onClick={function() {this.toggleDelete(grocery._id, index)}.bind(this)}>
-															{deleted}
+															{deleted} <i>remove</i>
 													</Button>
 												</div>
 
